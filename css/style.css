@@ -178,12 +178,12 @@ form {
 }
 
 a {
-    display: inline-block;
+    width: 100%;
+    display: block;
    
 
     
     text-decoration: none;
-    
     border-radius: 5px;
     text-transform: uppercase;
     color: black;
