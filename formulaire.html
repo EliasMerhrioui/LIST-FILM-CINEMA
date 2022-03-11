@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liste de film au cinéma">
+    <title>Film, séries TV et bien plus en illimité.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><h1 itemprop="name">Film, séries TV et bien plus en illimité.</h1></a>
+    </header>
+    <main> 
+        <section class="grid-picture">
+            <!-- IMG -->
+            <ul>
+                <li>
+                         <img src="./asset/legend.jpg" alt="je suis une legend">
+                 </li>
+                 <li>
+                         <img src="./asset/affcruella.jpg" alt="Cruella">
+                 </li>
+                 <li>
+                         <img src="./asset/affdune.jpg" alt="Dune">
+                 </li>
+                 <li>
+                         <img src="./asset/affescobar.jpg" alt="Escobar">
+                 </li>
+                 <li>
+                         <img src="./asset/affgravity.jpg" alt="gravity">
+                 </li>
+            </ul>            
+        </section>
+       
+        <section>
+            <!-- FORMULAIRE -->
+            <form>
+                <label for="nom">Nom:</label><br>
+                <input type="text" id="nom" name="nom" placeholder="Nom"><br><br>
+                
+                <label for="prenom">Prénom:</label><br>
+                <input type="text" id="prenom" name="prenom" placeholder="Prenom"><br><br>
+
+                <label for="mail">Email:</label><br>
+                <input type="email" id="mail" name="mail" placeholder="Email"><br><br>
+
+                <label for="ville">Ville:</label><br>
+                <select name="ville" id="ville" >
+                    <option value="">-- Sélectionner votre ville --</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Montreuil">Montreuil</option>
+                    <option value="Rosny">Rosny</option>
+                </select><br><br>
+
+                <label for="pays">Pays:</label><br>
+                <select name="pays" id="pays">
+                    <option value="">-- Sélectionner votre pays --</option>
+                    <option value="France">France</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Montréal">Montréal</option>
+                </select><br><br>
+
+              
+                <input type="submit" value="Submit" class="buttonForm">
+            </form> 
+        </section>
+    </main>
+    <footer>
+        <a href = "index.html"> <button class="button">Index</button> </a>
+        <p>&copy; Elias Merhrioui - Streaming - 2021</p>
+    </footer>
+</body>
+</html>
+ 
