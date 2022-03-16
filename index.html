@@ -1,130 +1,340 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Liste de film au cinéma">
     <title>Film, séries TV et bien plus en illimité.</title>
-    
+
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="index.html"><h1 itemprop="name">Film, séries TV et bien plus en illimité.</h1></a>
+        <a href="index.html">
+            <h1 itemprop="name">Film, séries TV et bien plus en illimité.</h1>
+        </a>
     </header>
     <main>
-        <nav>
-        
+        <nav class="navMenu">
+            
+                <a href="#" class="ConnexionInscription">Connection/Inscription</a>
+                <a href="index.html" class="NosFilm">Nos Films</a>
+                <a href="formulaire.html" class="formulaireAjout">Demande d'ajout nouveau film</a>
+                <a href="favoris.html" class="favoris">Vos Favoris</a>
+                <a href="rechercher.html" class="rechercher">Rechercher</a>
+
+                <div class="dot"></div>
+              
         </nav>
-        
+
         <section>
             <h2>Prêt à regarder? Remplissez le formulaire proposé dans cette page</h2>
-            <p>
+            <p class="contour">
                 Tous les mois profitez de toutes les nouveautés série et cinéma. A partir du mois
                 prochain on vous propose tous les classiques du cinéma. Où que vous soyez. Tous
                 le s films en VO, VOST, VF et plus d'options
             </p>
-            
         </section>
-            <section class="grid-picture">
-                <ul>
-                    <li>
-                        <a href="#demo"><img src="./asset/legend.jpg" alt="je suis une legend"></a>
-                        <div id="demo" class="modal">
-                            <div class="modal_content">
-                                <h1>JE SUIS UNE LEGEND FILM</h1>
-                                <img src="./asset/legend.jpg" alt="je suis une legend">
-                                <a href="#" class="modal_close">&times;</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#demo2"><img src="./asset/affcruella.jpg" alt="Cruella"></a>
-                        <div id="demo2" class="modal">
-                            <div class="modal_content">
-                                <h1>CRUELLA FILM</h1>
-                                <img src="./asset/affcruella.jpg" alt="Cruella">
 
-                                <a href="#" class="modal_close">&times;</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#demo3"><img src="./asset/affdune.jpg" alt="Dune"></a>
-                        <div id="demo3" class="modal">
-                            <div class="modal_content">
-                                <h1>Dune FILM</h1>
-                                <img src="./asset/affdune.jpg" alt="Dune">
+        <ul class="grid-picture">
+            <figure>
+                <li 
+                    data-image="./asset/legend.jpg" 
+                    data-title="Je suis une legend" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/legend.jpg" alt="je suis une legend">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>   
+            <figure>
+                <li 
+                    data-image="./asset/affcruella.jpg" 
+                    data-title="Cruella" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/affcruella.jpg" alt="Cruella">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/affdune.jpg" 
+                    data-title="Dune" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/affdune.jpg" alt="Dune">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>  
+            <figure>
+                <li 
+                    data-image="./asset/affescobar.jpg" 
+                    data-title="Escobar" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/affescobar.jpg" alt="Escobar">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/affgravity.jpg" 
+                    data-title="gravity" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/affgravity.jpg" alt="gravity">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/affjoker.jpg" 
+                    data-title="joker" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/affjoker.jpg" alt="joker">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/affmeilleurfilmtoutlestemps.jpg" 
+                    data-title="?" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/affmeilleurfilmtoutlestemps.jpg" alt="?">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/affrebelle.jpg" 
+                    data-title="?" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/affrebelle.jpg" alt="rebelle">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/affre.jpg" 
+                    data-title="?" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/affre.jpg" alt="re">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/affsosf.jpg" 
+                    data-title="?" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/affsosf.jpg" alt="10">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/afftaken.jpg" 
+                    data-title="?" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/afftaken.jpg" alt="taken">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/afftitanic.jpg" 
+                    data-title="?" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/afftitanic.jpg" alt="titanic">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/casadepapel.jpg" 
+                    data-title="?" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/casadepapel.jpg" alt="casa del papel">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/ça.jpg" 
+                    data-title="?" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/ça.jpg" alt="ça">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+            <figure>
+                <li 
+                    data-image="./asset/affgravity.jpg" 
+                    data-title="gravity" 
+                    data-description="films"
+                    data-dates="1999"
+                >
+                    <img src="./asset/affgravity.jpg" alt="gravity">
+                    <figcaption>
+                        <h2>
+                            <i class="material-icons" aria-hidden="true">
+                                pages
+                            </i>
+                            Agrandir
+                        </h2>
+                    </figcaption>
+                </li>
+            </figure>
+        </ul>
 
-                                <a href="#" class="modal_close">&times;</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#demo4"><img src="./asset/affescobar.jpg" alt="Escobar"></a>
-                        <div id="demo4" class="modal">
-                            <div class="modal_content">
-                                <h1>Escobar FILM</h1>
-                                <img src="./asset/affescobar.jpg" alt="Escobar">
+        <a href="formulaire.html"> <button class="button">Cliquez ici pour commencer</button> </a>
 
-                                <a href="#" class="modal_close">&times;</a>
-                            </div>
-                        </div>   
-                       
-                    </li>
-                    <li>
-                        <a href="#demo5"><img src="./asset/affgravity.jpg" alt="gravity"></a>
-                        <div id="demo5" class="modal">
-                            <div class="modal_content">
-                                <h1>gravity FILM</h1>
-                                <img src="./asset/affgravity.jpg" alt="gravity">
 
-                                <a href="#" class="modal_close">&times;</a>
-                            </div>
-                        </div>       
-                        
-                    </li>
-                    <li>
-                            <img src="./asset/affjoker.jpg" alt="joker">
-                    </li>
-                    <li>
-                            <img src="./asset/affmeilleurfilmtoutlestemps.jpg" alt="film">
-                    </li>
-                    <li>
-                            <img src="./asset/affrebelle.jpg" alt="rebelle">
-                    </li>
-                    <li>
-                            <img src="./asset/affre.jpg" alt="re">
-                    </li>
-                    <li>
-                            <img src="./asset/affsosf.jpg" alt="10">
-                    </li>
-                    <li>
-                            <img src="./asset/afftaken.jpg" alt="taken">
-                    </li>
-                    <li>
-                            <img src="./asset/afftitanic.jpg" alt="titanic">
-                    </li>
-                    <li>
-                            <img src="./asset/casadepapel.jpg" alt="casa del papel">
-                    </li>
-                    <li>
-                            <img src="./asset/ça.jpg" alt="ca">
-                    </li>
-                    <li>
-                            <img src="./asset/affgravity.jpg" alt="gravity">
-                    </li>
-                </ul>            
-            </section>
-            <a href = "formulaire.html"> <button class="button">Cliquez ici pour commencer</button> </a>
-        
-       
     </main>
     <footer>
         <p>&copy; Elias Merhrioui - Streaming - 2021</p>
     </footer>
+
+    <!--Modale-->
+    <figure class="modale" role="groupe">
+        <button aria-label="closed">
+            <span class="material-icons">clear</span>
+        </button>
+        <img src="./asset/affjoker.jpg" alt="joker">
+        <figcaption class="desc">
+            <h3>title</h3>
+            <p>description</p>
+            <time datetime="">Years:2022 </time>
+        </figcaption>
+    </figure>
+
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
- 
