@@ -83,23 +83,49 @@ header h1::before{
 }
 
 /* NAVIGATION */
-  .navMenu {
-    margin-top:5rem;
-    margin-bottom:10rem;
-    position: absolute;
-    left: 50%; 
-    -webkit-transform: translate(-50%, -50%); 
-    transform: translate(-50%, -50%);
+  
+
+  nav { 
+    max-width: 120rem;
+    margin: 0 auto;
+    line-height: 4.5rem;
+    
+    
+    
   }
  
+  nav ul {
+    font-size: 0;
+  }
+
+  nav ul li{
+    display: inline-block;
+    font-size: initial;
+    padding:.8rem;
+    width: calc(100%/4);
+  }
+
+  nav ul li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav ul li:hover a{
+    background: rgb(255, 255, 255);
+    color: black;
+  }
+
   .navMenu a {
+    max-width: 120rem;
     color: #ffffff;
     text-decoration: none;
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 500;
     display: inline-block;
-    
+    padding-right: 10%;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; 
   }
@@ -161,10 +187,13 @@ header h1::before{
   }
    
 /* MAIN */ 
-
 main h2 {
     text-align: center;
     padding:1rem;
+}
+
+section {
+  margin-top: 10rem;
 }
 
 .contour {
@@ -178,9 +207,7 @@ main h2 {
   color:var(--color-initial); 
 
 }
-main p {
-   
-}
+
 
 main .grid-picture {
     display: grid; 

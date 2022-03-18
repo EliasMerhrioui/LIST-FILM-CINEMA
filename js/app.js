@@ -34,8 +34,6 @@ document.addEventListener("DOMContentLoaded", (e)=> {
         modale.classList.remove("modale-active")
     })
 
-    $('.message a').click(function(){
-        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-     });
+    
 })
 
