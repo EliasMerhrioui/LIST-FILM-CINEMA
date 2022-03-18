@@ -13,11 +13,13 @@ document.addEventListener("DOMContentLoaded", (e)=> {
 
         let image = this.dataset.image;
         let title = this.dataset.title;
+        let info = this.dataset.info;
         let description = this.dataset.description;
         let dates = this.dataset.dates;
         modale.classList.add("modale-active")
         document.querySelector(".modale img").setAttribute("src", image)
-        document.querySelector(".modale figcaption h3").innerText = title;
+        document.querySelector(".modale figcaption h2").innerText = title;
+        document.querySelector(".modale figcaption h4").innerText = info;
         document.querySelector(".modale figcaption p").innerText = description;
         document.querySelector(".modale figcaption time").innerText = `Annee ${dates}`;
     }

@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://css.gg/heart.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -19,14 +20,14 @@
         </a>
     </header>
     <main>
-        <nav>
+        <nav class="navMenu">
             <ul>
-                <li><a href="#" class="ConnexionInscription">Acceuil</a></li>
-                <li><a href="index.html" class="NosFilm">Connexion/Inscription</a></li>
-                <li><a href="favoris.html" class="favoris">Vos Favoris</a></li>
-                <li><a href="rechercher.html" class="rechercher">Rechercher</a></li>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="pageconnexion.html">Connexion/Inscription</a></li>
+                <li><a href="favoris.html">Vos Favoris</a></li>
+                <li><a href="rechercher.html">Rechercher</a></li>
             </ul>
-            <div class="dot"></div> 
+            <div class="dot"></div>
         </nav>
         
         <section>
@@ -41,12 +42,13 @@
         <ul class="grid-picture">
             <figure>
                 <li 
-                    data-image="./asset/legend.jpg" 
-                    data-title="Je suis une legend" 
+                    data-image="./asset/moonfall.jpg" 
+                    data-title="Moonfall (2022)" 
+                    data-info="09/02/2022 (FR) - Action, Aventure, Science-Fiction - 2h 10m"
                     data-description="films"
                     data-dates="1999"
                 >
-                    <img src="./asset/legend.jpg" alt="je suis une legend">
+                    <img src="./asset/moonfall.jpg" alt="je suis une legend">
                     <figcaption>
                         <h2>
                             <i class="material-icons" aria-hidden="true">
@@ -320,17 +322,30 @@
     </footer>
 
     <!--Modale-->
-    <figure class="modale" role="groupe">
-        <button aria-label="closed">
-            <span class="material-icons">clear</span>
-        </button>
-        <img src="./asset/affjoker.jpg" alt="joker">
-        <figcaption class="desc">
-            <h3>title</h3>
-            <p>description</p>
-            <time datetime="">Years:2022 </time>
-        </figcaption>
-    </figure>
+    <div class="parent-modale">
+        <figure class="modale" role="groupe">
+            <button aria-label="closed">
+                <span class="material-icons">clear</span>
+            </button>
+            <img src="./asset/affjoker.jpg" alt="joker">
+            <figcaption class="desc">
+                <div class="contour">
+                    <h2 >title</h2>
+                    <h4>info</h4>
+                </div>
+                <ul>
+                    <li><p class="note">NoteUtilisateurs</p></li>
+                    <li><i class="gg-heart"></i></li>
+                </ul>
+                
+                
+                <h2>Synopsis</h2>
+                <p>description</p>
+                <time datetime="">Years:2022 </time>
+            </figcaption>
+        </figure>
+    </div>
+    
 
     <script src="./js/app.js"></script>
 </body>
