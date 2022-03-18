@@ -16,3 +16,7 @@ Une Agence nous confie la réalisation d’une page publicitaire pour une des pr
 * Après l’intégration de la charte graphique, revenir sur les fonctionnalités et se préparer à intégrer toute la maquette dans un framework.
 * Revenir sur le développement des fonctionnalités développées dans la première phase.
 * Trouver la meilleure méthode pour reproduire le même contrôle des événements : envoie des requête et réponse
+
+# Maquette 
+
+# Charte graphique 
