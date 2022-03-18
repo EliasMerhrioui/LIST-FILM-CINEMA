@@ -264,6 +264,7 @@ footer {
 .modale figcaption, .modale img {
   display: inline-block;
   width: calc(100% / 2 - 1rem);
+  padding-right: 2.5rem;
   vertical-align: top;
   font-size: inherit;
 }
@@ -271,7 +272,7 @@ footer {
 .modale{
     max-width: 80rem;
     width: 80rem;
-    padding: 1rem;
+    padding: 2.5rem;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -333,7 +334,7 @@ footer {
     right: 1.5rem;
     font-size: 2rem;
     z-index: 2;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
