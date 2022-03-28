@@ -11,17 +11,27 @@ document.addEventListener("DOMContentLoaded", (e)=> {
     open_modale = function(){
         console.log(this)
 
-        let image = this.dataset.image;
+
         let title = this.dataset.title;
-        let info = this.dataset.info;
+        let genre = this.dataset.genre;
+        let image = this.dataset.image;
         let description = this.dataset.description;
         let dates = this.dataset.dates;
+        let info = this.dataset.info;
+
         modale.classList.add("modale-active")
+        
+        document.querySelector(".modale .headModale h1").innerText = title;
+        document.querySelector(".modale .headModale p").innerText = genre;
         document.querySelector(".modale img").setAttribute("src", image)
-        document.querySelector(".modale figcaption h2").innerText = title;
+        document.querySelector(".modale figcaption .synopsisModale").innerText = description;
+        document.querySelector(".modale figcaption .dateModale").innerText = dates;
+        
+        
+        
+        
         document.querySelector(".modale figcaption h4").innerText = info;
-        document.querySelector(".modale figcaption p").innerText = description;
-        document.querySelector(".modale figcaption time").innerText = `Annee ${dates}`;
+         
     }
 
     for(rows of el){

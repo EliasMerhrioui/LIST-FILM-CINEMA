@@ -179,6 +179,7 @@ main h2 {
 
 
 .contour {
+  max-width: 120rem;
   border: 0.3rem solid var(--color-primary);
   background-color: var(--color-primary);
   border-radius: 1rem;
@@ -270,23 +271,86 @@ footer {
 }
 
 .modale{
-    max-width: 80rem;
-    width: 80rem;
-    padding: 2.5rem;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    box-shadow:0 0 1rem rgba(0,0,0,0.6);
-    z-index: -1;
-    opacity: 0;
-    cursor: pointer;
-    transition:all 500ms ease-in-out;
+  background: #FFFFFF;
+  max-width: 120rem;
+  width: 100rem;
+  position: fixed;
+  padding: 1.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #D1D5DB;
+  box-sizing: border-box;
+  box-shadow: 1rem 2rem 2rem rgba(124, 23, 124, 0.25);
+  border-radius: 8px;
+  z-index: -1;
+  opacity: 0;
+  cursor: pointer;
+  transition:all 500ms ease-in-out;
 }
+
+.modale .headModale {
+  color:#1C1B22;
+}
+
+.modale .headModale::after {
+    content: '';
+    display: block;
+    
+    height: 1px;
+    background: rgb(59, 59, 59);
+    margin: 10px auto 20px;
+}
+
+.modale .imgModale {
+  
+}
+
+.modale .boxModale {
+  border: 0.1rem solid var(--color-primary);
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color:var(--color-initial); 
+}
+
+.modale .synopsisModale {
+  margin-bottom: 1rem; 
+  font-weight: bold;
+}
+
+.modale .buttonModale {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+}
+
+.modale .dateModale {
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.modale .listeModale {
+  display: inline-block;
+  width: calc(100% / 2 - 1rem);
+}
+
+.modale .gg-heart {
+  top : 10%;
+  left: 50%;
+}
+
 .modale ul {
   font-size: 0;
 }
+
 .modale ul li {
   display: inline-block;
     text-transform: uppercase;
@@ -307,13 +371,6 @@ footer {
     color: #1C1B22;
 }
 
-.modale .desc h3{
-    font-size: x-large;
-    
-    font-weight: 400;
-    padding: 1rem;
-}
-
 .modale .desc p {
     padding: 1rem;
 }
@@ -330,12 +387,17 @@ footer {
 
 .modale button{
     position: absolute;
-    top: 1.5rem;
+    top: 3rem;
     right: 1.5rem;
     font-size: 2rem;
     z-index: 2;
-    color: rgb(0, 0, 0);
+    color: #EF4444;
     cursor: pointer;
+}
+
+.scrollbar {
+  overflow:scroll;
+
 }
 
 /* LOGIN PAGE */
@@ -399,3 +461,5 @@ footer {
   text-decoration: none;
 }
 
+
+/* FAVORIS BUTTON */
